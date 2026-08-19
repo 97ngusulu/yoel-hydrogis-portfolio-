@@ -58,9 +58,17 @@
       }
 
       .brand {
+        display: flex;
+        align-items: center;
+        gap: 12px;
         color: #f8fafc;
         font-weight: 800;
         letter-spacing: 0.02em;
+      }
+
+      .brand img {
+        height: 40px;
+        width: auto;
       }
 
       .brand span {
@@ -659,6 +667,28 @@
         margin: 0 auto;
       }
 
+      .footer-logo {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        margin-bottom: 32px;
+      }
+
+      .footer-logo img {
+        height: 35px;
+        width: auto;
+      }
+
+      .footer-logo-text {
+        color: #f8fafc;
+        font-weight: 800;
+        letter-spacing: 0.02em;
+      }
+
+      .footer-logo-text span {
+        color: #5eead4;
+      }
+
       .footer-content {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -794,7 +824,10 @@
   <body>
     <header class="site-header">
       <nav class="nav" aria-label="Primary navigation">
-        <a class="brand" href="#">Yoeln <span>HdroGIS</span></a>
+        <a class="brand" href="#">
+          <img src="Logo.png" alt="HdroGIS Logo" />
+          Yoeln <span>HdroGIS</span>
+        </a>
         <div class="nav-links">
           <a href="#data-hub">Data Hub</a>
           <a href="#visuals">Visuals</a>
@@ -927,10 +960,10 @@
             <p class="eyebrow">About</p>
             <h2>Hydrology & GIS Specialist | Flood Risk, Water Resources & Land Use Modelling</h2>
             <p class="muted">
-              I'm a Hydrology and GIS Specialist based in Tanzania, currently working as a freelance Hydrology Technician with Shilungushela firm. My work sits at the intersection of field data and geospatial analysis — from mapping land use and surface water flow, to combining geophysical surveys with GIS to identify and rank groundwater borehole locations.
+              I'm a Hydrology and GIS Specialist based in Tanzania, currently working as a freelance Hydrology Technician with Shilungushela firm. My work sits at the intersection of field data and geospatial analysis.
             </p>
             <p class="muted">
-              I focus on turning raw spatial and hydrological data into decision-ready outputs: flood risk maps, watershed delineations, runoff models, and land use classifications that support infrastructure planning and water resource management. My goal is to build Yoeln HdroGIS into a leading geospatial and water resources consultancy for sustainable environmental planning across the region.
+              I focus on turning raw spatial and hydrological data into decision-ready outputs: flood risk maps, watershed delineations, runoff models, and land use classifications that support infrastructure planning and environmental decision-making.
             </p>
           </div>
 
@@ -1000,14 +1033,13 @@
       <section id="contact" class="section">
         <div class="container center">
           <p class="eyebrow">Contact</p>
-          <h2>Let's Work Together</h2>
+          <h2>Get in Touch</h2>
           <p class="muted">
-            Available for GIS analysis, hydrological studies, mapping projects, environmental spatial analysis, and geospatial consultancy.
+            Interested in GIS solutions, hydrological analysis, or geospatial projects? Let's connect and explore how I can support your workflows.
           </p>
           <div class="contact-actions">
-            <a class="btn primary" href="https://wa.me/255682647397" target="_blank" rel="noopener noreferrer">WhatsApp Contact -&gt;</a>
-            <a class="btn" href="tel:+255682647397">Call Now</a>
-            <a class="btn" href="https://www.linkedin.com/in/yoel-ngusulu-66748a1b6" target="_blank" rel="noopener noreferrer">LinkedIn Profile</a>
+            <a class="btn primary" href="mailto:your-email@example.com">Send Email</a>
+            <a class="btn" href="https://linkedin.com" target="_blank" rel="noopener noreferrer">LinkedIn</a>
           </div>
         </div>
       </section>
@@ -1015,93 +1047,98 @@
 
     <footer class="site-footer">
       <div class="footer-container">
+        <div class="footer-logo">
+          <img src="Logo.png" alt="HdroGIS Logo" />
+          <div class="footer-logo-text">Yoeln <span>HdroGIS</span></div>
+        </div>
+
         <div class="footer-content">
           <div class="footer-section">
-            <h3>About Yoeln HdroGIS</h3>
-            <p>Hydrology and GIS specialist focused on spatial analysis, remote sensing, and water resource management across East Africa.</p>
-            <div class="social-links">
-              <a class="social-icon" href="https://github.com/yoelngusulu" target="_blank" rel="noopener noreferrer" title="GitHub" aria-label="GitHub Profile">
-                <i class="fab fa-github"></i>
-              </a>
-              <a class="social-icon" href="https://www.linkedin.com/in/yoel-ngusulu-66748a1b6" target="_blank" rel="noopener noreferrer" title="LinkedIn" aria-label="LinkedIn Profile">
-                <i class="fab fa-linkedin"></i>
-              </a>
-            </div>
-          </div>
-
-          <div class="footer-section">
-            <h3>Quick Links</h3>
-            <p><a href="#data-hub">Data Hub</a></p>
+            <h3>Services</h3>
+            <p><a href="#data-hub">GIS Data Download</a></p>
             <p><a href="#portfolio">Portfolio</a></p>
-            <p><a href="#visuals">Visuals</a></p>
             <p><a href="#about">About</a></p>
           </div>
 
           <div class="footer-section">
             <h3>Resources</h3>
+            <p><a href="#visuals">Project Visuals</a></p>
             <p><a href="#contact">Contact</a></p>
-            <p><a href="#">Privacy Policy</a></p>
-            <p><a href="#">Terms of Service</a></p>
+          </div>
+
+          <div class="footer-section">
+            <h3>Connect</h3>
+            <div class="social-links">
+              <a class="social-icon" href="https://linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+              <a class="social-icon" href="https://twitter.com" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
+                <i class="fab fa-twitter"></i>
+              </a>
+              <a class="social-icon" href="https://github.com" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                <i class="fab fa-github"></i>
+              </a>
+            </div>
           </div>
         </div>
 
         <div class="footer-divider">
-          <p class="footer-copyright">© 2024 Yoeln HdroGIS. All rights reserved | Designed & Built by <span>Yoel Ngusulu</span></p>
+          <p class="footer-copyright">© 2024 <span>Yoeln HdroGIS</span>. All rights reserved.</p>
         </div>
       </div>
     </footer>
 
-    <div class="modal-overlay" id="downloadModal">
+    <div id="download-modal" class="modal-overlay">
       <div class="modal-content">
-        <button class="close-modal" type="button" aria-label="Close modal">&times;</button>
-        <h3 style="margin: 0 0 24px; color: #5eead4;">Download Registration</h3>
-        <form id="downloadForm">
+        <button class="close-modal" aria-label="Close registration modal">&times;</button>
+        <h2 style="margin-bottom: 24px;">Download <span id="file-name"></span></h2>
+        <p style="color: #cbd5e1; margin-bottom: 24px;">To download GIS data, please create a free account or sign in:</p>
+        <form style="display: flex; flex-direction: column; gap: 18px;">
           <div class="form-group">
-            <label for="fullName">Full Name *</label>
-            <input type="text" id="fullName" name="fullName" required />
+            <label for="email">Email Address</label>
+            <input type="email" id="email" placeholder="your@email.com" required />
           </div>
           <div class="form-group">
-            <label for="email">Email Address *</label>
-            <input type="email" id="email" name="email" required />
+            <label for="password">Password</label>
+            <input type="password" id="password" placeholder="••••••••" required />
           </div>
-          <div class="form-group">
-            <label for="organization">Organization</label>
-            <input type="text" id="organization" name="organization" />
-          </div>
-          <button type="submit" class="btn primary" style="width: 100%; margin-top: 24px;">Proceed to Download</button>
+          <button type="submit" class="btn primary">Download</button>
         </form>
       </div>
     </div>
 
     <script>
-      // Download modal functionality
-      const downloadModal = document.getElementById('downloadModal');
-      const downloadForm = document.getElementById('downloadForm');
-      const closeModalBtn = document.querySelector('.close-modal');
-      const downloadTriggers = document.querySelectorAll('.download-trigger');
-
-      downloadTriggers.forEach(trigger => {
-        trigger.addEventListener('click', (e) => {
-          e.preventDefault();
-          downloadModal.classList.add('active');
+      // Smooth scroll behavior
+      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', (e) => {
+          const href = anchor.getAttribute('href');
+          if (href !== '#') {
+            e.preventDefault();
+            document.querySelector(href)?.scrollIntoView({ behavior: 'smooth' });
+          }
         });
       });
 
-      closeModalBtn.addEventListener('click', () => {
-        downloadModal.classList.remove('active');
+      // Download modal
+      const modal = document.getElementById('download-modal');
+      const fileNameSpan = document.getElementById('file-name');
+      const closeBtn = document.querySelector('.close-modal');
+
+      document.querySelectorAll('.download-trigger').forEach(btn => {
+        btn.addEventListener('click', () => {
+          fileNameSpan.textContent = btn.dataset.file;
+          modal.classList.add('active');
+        });
       });
 
-      downloadModal.addEventListener('click', (e) => {
-        if (e.target === downloadModal) {
-          downloadModal.classList.remove('active');
+      closeBtn.addEventListener('click', () => {
+        modal.classList.remove('active');
+      });
+
+      modal.addEventListener('click', (e) => {
+        if (e.target === modal) {
+          modal.classList.remove('active');
         }
-      });
-
-      downloadForm.addEventListener('submit', (e) => {
-        e.preventDefault();
-        alert('Thank you for registering! Your download will start shortly.');
-        downloadModal.classList.remove('active');
-        downloadForm.reset();
       });
     </script>
   </body>
