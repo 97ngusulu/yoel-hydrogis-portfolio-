@@ -843,9 +843,14 @@
           <div>
             <p class="eyebrow">GIS | Hydrology | Remote Sensing</p>
             <h1>Yoeln <span class="accent">HdroGIS</span></h1>
-            <p class="lead">
-                Professional GIS and Hydrology Hub showcasing advanced spatial analysis, hydrological and hydrogeological modelling, remote sensing applications, and geospatial data solutions.
+           const [expanded, setExpanded] = useState(false);
+            
+            <p class="lead"
+            Professional GIS & Hydrology Hub specialising in advanced spatial analysis, hydrological and hydrogeological modelling, remote sensing, and geospatial data solutions. Exploring data-driven approaches to solve real-world water, environmental, and spatial challenges.
             </p>
+              <button onClick={() => setExpanded(!expanded)}>
+  {expanded? "Show Less ↑": "Learn More →"}
+              </button>
             <div class="actions">
               <a class="btn primary" href="#data-hub">Download GIS Data -&gt;</a>
               <a class="btn" href="#portfolio">View Portfolio</a>
@@ -1082,7 +1087,7 @@
         </div>
 
         <div class="footer-divider">
-          <p class="footer-copyright">© 2024 <span>Yoeln HdroGIS</span>. All rights reserved.</p>
+          <p class="footer-copyright">© 2026 <span>Yoeln HdroGIS</span>. All rights reserved.</p>
         </div>
       </div>
     </footer>
